@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AfricaSpeaks | Discover African Languages</title>
+    <meta
+        name="description"
+        content="Discover African languages, explore cultures, and connect with language tutors."
+    >
+
+    <!-- Google Fonts: elegant headings + readable body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Our own stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar container">
+            <a class="logo" href="index.html">
+                Africa<span>Speaks</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#explore">Explore</a>
+                <a href="#languages">Languages</a>
+                <a href="#about">Our Mission</a>
+                <a href="#lessons" class="nav-cta">Start Learning</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content container">
+
+                <p class="eyebrow">LANGUAGE · CULTURE · CONNECTION</p>
+
+                <h1>
+                    Discover Africa.<br>
+                    <span>One language at a time.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore the languages, voices, and cultures of Africa.
+                    Discover a new way to connect with people, places,
+                    and stories across the continent.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#explore" class="button button-primary">
+                        Explore African Languages
+                    </a>
+
+                    <a href="#about" class="button button-outline">
+                        Discover Our Mission
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    A growing space for African languages and cultural exchange.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- INTRODUCTION -->
+        <section class="intro-section container">
+            <p class="eyebrow">MORE THAN WORDS</p>
+
+            <h2>Every language carries a world.</h2>
+
+            <p class="section-description">
+                Africa is home to an extraordinary linguistic diversity.
+                Every language opens a door to a community, a culture,
+                a history, and a different way of seeing the world.
+                AfricaSpeaks aims to make discovering these languages
+                easier and more accessible.
+            </p>
+        </section>
+
+
+        <!-- INTERACTIVE MAP SECTION -->
+        <section class="map-section" id="explore">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">EXPLORE THE CONTINENT</p>
+                    <h2>Where will your language journey begin?</h2>
+                    <p>
+                        Select a country to discover some of the languages
+                        spoken there.
+                    </p>
+                </div>
+
+                <div class="map-layout">
+
+                    <!-- The real geographic map will be added here -->
+                    
+                    <div class="map-placeholder">
+
+                        <div class="map-placeholder-content">
+                            <div class="map-title">
+                                <span class="map-symbol">🌍</span>
+                                <h3>Explore Africa</h3>
+                            </div>
+
+                            <p>
+                                Select a country on the map to discover its languages.
+                            </p>
+
+                            <!-- The interactive map will be drawn here -->
+                            <!-- COUNTRY SEARCH -->
+                            <div class="country-search">
+                                <input
+                                    type="search"
+                                    id="country-search"
+                                    placeholder="Search for an African country..."
+                                    aria-label="Search for an African country"
+                                    autocomplete="off"
+                                >
+                                <button type="button" id="country-search-button">
+                                    Explore
+                                </button>
+                            </div>
+
+                            <p id="search-message" class="search-message"></p>
+
+                            <!-- INTERACTIVE MAP -->
+                            <div id="africa-map" class="africa-map">
+                                <p class="map-loading">Preparing your map...</p>
+                            </div>
+
+                            <p class="map-credit">
+                                Geographic boundaries: MapJSON / Natural Earth
+                            </p>
+                            </div>
+
+                    </div>
+
+
+                    <!-- Selected country information -->
+                    <aside class="country-info" id="country-info">
+                        <p class="eyebrow">YOUR DISCOVERY</p>
+                        <h3>Select a country</h3>
+                        <p>
+                            Choose a country to see examples of languages
+                            spoken by its communities.
+                        </p>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- LANGUAGE DIRECTORY -->
+        <section class="languages-section container" id="languages">
+
+            <div class="section-heading">
+                <p class="eyebrow">START LEARNING</p>
+                <h2>Find your language.</h2>
+                <p>
+                    Begin with the languages currently offered,
+                    or discover what we hope to introduce in the future.
+                </p>
+            </div>
+
+            <div class="language-group">
+                <div class="group-heading">
+                    <h3>Available to learn</h3>
+                    <span class="status status-available">Available</span>
+                </div>
+
+                <div class="language-cards">
+
+                    <article class="language-card featured-card">
+                        <span class="language-icon">ع</span>
+                        <p class="language-region">NORTH AFRICA</p>
+                        <h3>Arabic</h3>
+                        <p>
+                            Explore Arabic through practical lessons
+                            and everyday communication.
+                        </p>
+                        <a href="mouna.html" class="text-link">
+                            Learn with Mouna →
+                        </a>
+                    </article>
+
+                    <article class="language-card featured-card">
+                        <span class="language-icon">ت</span>
+                        <p class="language-region">TUNISIA</p>
+                        <h3>Tunisian Arabic</h3>
+                        <p>
+                            Discover the Tunisian dialect, useful expressions,
+                            and the language of everyday life.
+                        </p>
+                        <a href="mouna.html" class="text-link">
+                            Learn with Mouna →
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+
+
+            <div class="language-group coming-soon-group">
+                <div class="group-heading">
+                    <h3>More languages to discover</h3>
+                    <span class="status status-coming">Coming soon</span>
+                </div>
+
+                <p class="group-description">
+                    These are examples of languages we hope to help learners
+                    discover through future tutors and learning resources.
+                </p>
+
+                <div class="coming-soon-list">
+                    <span>Swahili</span>
+                    <span>Wolof</span>
+                    <span>Yoruba</span>
+                    <span>Hausa</span>
+                    <span>Amharic</span>
+                    <span>Zulu</span>
+                    <span>Xhosa</span>
+                    <span>Igbo</span>
+                    <span>Somali</span>
+                    <span>Lingala</span>
+                    <span>Shona</span>
+                    <span>Oromo</span>
+                    <span>Amazigh</span>
+                    <span>Fulfulde</span>
+                    <span>Mandinka</span>
+                    <span>And many more...</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- WHY LEARN -->
+        <section class="why-section" id="about">
+            <div class="container why-content">
+
+                <p class="eyebrow">WHY AFRICAN LANGUAGES?</p>
+
+                <h2>Language brings people closer.</h2>
+
+                <div class="reason-grid">
+
+                    <article class="reason-card">
+                        <span>01</span>
+                        <h3>Travel with connection</h3>
+                        <p>
+                            Communicate with local communities and
+                            experience destinations beyond the usual tourist
+                            perspective.
+                        </p>
+                    </article>
+
+                    <article class="reason-card">
+                        <span>02</span>
+                        <h3>Discover cultures</h3>
+                        <p>
+                            Understand traditions, expressions, stories,
+                            and the cultural meaning behind words.
+                        </p>
+                    </article>
+
+                    <article class="reason-card">
+                        <span>03</span>
+                        <h3>Build opportunities</h3>
+                        <p>
+                            Develop language skills that can support
+                            education, work, research, and collaboration.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        
+        <!-- AVAILABLE LESSONS -->
+
+        <section class="lessons-section container" id="lessons">
+
+            <div class="section-heading">
+                <p class="eyebrow">YOUR LEARNING JOURNEY STARTS HERE</p>
+                <h2>Languages you can learn today.</h2>
+                <p>
+                    Start exploring African languages with our first available
+                    lessons. More languages and tutors will join the community.
+                </p>
+            </div>
+
+            <div class="lesson-cards">
+
+                <article class="lesson-card">
+                    <div class="lesson-symbol">ع</div>
+                    <p class="language-region">ARABIC</p>
+                    <h3>Learn Arabic with Mouna</h3>
+                    <p>
+                        Develop your Arabic communication skills through
+                        practical lessons, vocabulary, and everyday expressions.
+                    </p>
+                    <a href="mouna.html" class="button button-primary">
+                        Discover Arabic lessons →
+                    </a>
+                </article>
+
+                <article class="lesson-card">
+                    <div class="lesson-symbol">ت</div>
+                    <p class="language-region">TUNISIA</p>
+                    <h3>Learn Tunisian Arabic with Mouna</h3>
+                    <p>
+                        Learn the Tunisian dialect, understand local expressions,
+                        and prepare to communicate with Tunisian communities.
+                    </p>
+                    <a href="mouna.html" class="button button-primary">
+                        Discover Tunisian lessons →
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- INVITATION FOR AFRICAN LANGUAGE TUTORS -->
+
+        <section class="tutor-invitation">
+            <div class="container invitation-content">
+
+                <p class="eyebrow">ARE YOU A LANGUAGE TUTOR?</p>
+
+                <h2>Your language deserves to be heard.</h2>
+
+                <p>
+                    Are you a native speaker or passionate teacher who wants
+                    to share an African language with the world?
+
+                    Join a growing community of language tutors, introduce
+                    learners to your language, and share the culture, stories,
+                    and traditions behind every word.
+                </p>
+
+                <p class="invitation-highlight">
+                    Whether you teach Swahili, Wolof, Yoruba, Amazigh,
+                    Zulu, Hausa, or another African language,
+                    there is a place for your voice.
+                </p>
+
+                <a href="mailto:hello@africaspeaks.com"
+                class="button button-light">
+                    I want to become a tutor →
+                </a>
+
+                <small>
+                    AfricaSpeaks is currently developing its tutor community.
+                    Get in touch to express your interest.
+                </small>
+
+            </div>
+        </section>    
+        
+
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo footer-logo" href="index.html">
+                Africa<span>Speaks</span>
+            </a>
+
+            <p>
+                Celebrating African languages, cultures, and connections.
+            </p>
+
+            <p class="copyright">
+                © 2026 AfricaSpeaks. Working project.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- D3.js draws the country shapes -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+
+    <!-- TopoJSON reads the geographic data -->
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Our own JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
