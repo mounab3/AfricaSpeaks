@@ -129,18 +129,38 @@
                             </p>
 
                             <!-- The interactive map will be drawn here -->
-                            <!-- COUNTRY SEARCH -->
+                            <!-- =========================================
+                                 COUNTRY SEARCH
+
+                                 Visitors can type a country name or
+                                 select a country from the suggestions.
+                                 ========================================= -->
+
                             <div class="country-search">
+
                                 <input
                                     type="search"
                                     id="country-search"
-                                    placeholder="Search for an African country..."
+                                    placeholder="Search or select an African country..."
                                     aria-label="Search for an African country"
                                     autocomplete="off"
+                                    aria-controls="country-suggestions"
+                                    aria-autocomplete="list"
                                 >
+
                                 <button type="button" id="country-search-button">
                                     Explore
                                 </button>
+
+                            </div>
+
+                            <!-- Alphabetical country suggestions appear here. -->
+                            <div
+                                id="country-suggestions"
+                                class="country-suggestions"
+                                role="listbox"
+                                aria-label="African countries"
+                                hidden>
                             </div>
 
                             <p id="search-message" class="search-message"></p>
